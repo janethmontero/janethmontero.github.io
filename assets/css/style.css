@@ -972,7 +972,9 @@ Resume Timeline
     text-transform: capitalize;
 }
 
-
+.h2Conocimientos {
+  font-size: 40px;
+}
 
 /* progress-bar */
 
@@ -1458,6 +1460,7 @@ Icon for all respective meta
 
 .contact-form textarea.form-control {
     height: 115px;
+    resize: none;
 }
 
 .contact-form .btn {
