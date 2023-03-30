@@ -218,23 +218,22 @@ jQuery(function ($) {
 
 
     // -------------------------------------------------------------
-    // Vidio auto play
+    // Video auto play
     // -------------------------------------------------------------
     (function () {
 
     /* Vimeo API: http://developer.vimeo.com/player/js-api */
 
-        var iframe = document.getElementById('nofocusvideo');
-        // $f == Froogaloop
-        var player = $f(iframe);
+        // var iframe = document.getElementById('nofocusvideo');
+        // var player = new Vimeo.Player(iframe);;
 
-        $('.modal').on('hidden.bs.modal', function () {
-        player.api('pause');
-        })
+        // $('.modal').on('hidden.bs.modal', function () {
+        //     player.pause;
+        // })
 
-        $('.modal').on('shown.bs.modal', function () {
-        player.api('play');
-        })
+        // $('.modal').on('shown.bs.modal', function () {
+        //     player.play;
+        // })
     }());
 
 
@@ -277,7 +276,7 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     (function () {
-        var myLatlng = new google.maps.LatLng(29.083461, -110.960353);
+        var myLatlng = new google.maps.LatLng(29.1026, -110.97732);
 
             var styles = [
                 {
@@ -311,7 +310,7 @@ jQuery(function ($) {
             ];
 
             var mapOptions = {
-                zoom: 15,
+                zoom: 12,
                 scrollwheel: false,
                 center: myLatlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
